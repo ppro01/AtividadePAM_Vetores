@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays-JS PAM</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="app">
+            <button class="btn-mobile" onclick="btnAtivar()">
+                <span class="hamb"></span>
+            </button>
+            <nav class="navbar-lateral">
+                <div class="btn-close" onclick="btnFechar()">
+                    <span class="close"></span>
+                </div>
+                <div class="list-container">
+                    <h1 class="list-title">Lista dos nomes</h1>
+                    <ul class="list"></ul>
+                </div>
+            </nav>
+            <div class="search-bar">
+                <input type="search" name="" id="barrapesquisa">
+                <button class="btn-search" onclick="Pesquisar()">Pesquisar </button>
+            </div>
+            <h1 class="title">Titulo</h1>
+            <input type="text" placeholder="Insira um nome" id="insertName">
+            <div class="buttons">
+                <button class="btn" onclick="vetorPush()">Adicionar Nome</button>
+                <button class="btn" onclick="vetorUnshift()">Adicionar Nome no Inicio</button>
+                <button class="btn" onclick="vetorPop()">Excluir o Ultimo nome</button>
+                <button class="btn" onclick="vetorShift()">Excluir o Primeiro Nome</button>
+                <button class="btn" onclick="exibir()">Exibir os Nomes</button>
+            </div>
+            <button class="btn-list" onclick="listarNomes()">Listar Nomes</button>
+        </div>
+    </section>
+    <script src="components/script.js"></script>
+</body>
+</html>
